@@ -1,0 +1,21 @@
+models:
+  - name: int_vendas_info_payments
+    description: Tabela Intermediaria de Pagamentos da Adventure Works.
+    columns:
+      - name: PK_CREDIT_CARD
+        description: Chave primaria (PK) da tabela.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: PK_BUSINESS_ENTITY
+        description: Chave primaria (PK) da tabela.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: CARD_TYPE
+        description: Tipo do cartão.
+
+      - name: MODIFIED_DATE
+        description: A                     
