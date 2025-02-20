@@ -1,0 +1,24 @@
+models:
+  - name: int_vendas_info_customers
+    description: Tabela Intermediaria de Clientes da Adventure Works.
+    columns:
+      - name: PK_BUSINESS_ENTITY
+        description: Chave primaria (PK) da tabela.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: PK_PERSON
+        description: Chave primaria (PK) da tabela.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: TITLE
+        description: Titulo de tratamento do cliente.
+
+      - name: FULL_NAME
+        description: Nome completo do cliente.
+
+      - name: MODIFIED_DATE          
+        description: A
