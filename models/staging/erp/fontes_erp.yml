@@ -7,3 +7,7 @@ sources:
       - name: product
       - name: productsubcategory
       - name: productcategory
+      - name: salesterritory
+      - name: stateprovince
+      - name: address
+      - name: countryregion
