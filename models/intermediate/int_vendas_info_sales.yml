@@ -1,0 +1,70 @@
+models:
+  - name: int_vendas_info_sales
+    description: Tabela Intermediaria de Vendas da Adventure Works.
+    columns:
+      - name: SK_SALES
+        description: Chave Surrogate (SK) da tabela.
+        data_tests:
+          - unique
+          - not_null
+        
+      - name: PK_SALES_ORDER
+        description: Chave primaria da tabela.
+        
+      - name: PK_SALES_ORDER_DETAIL
+        description: Chave primaria da tabela.
+        
+      - name: FK_CUSTOMER
+        description: Chave estrageira com a tabela dim_customers.
+        
+      - name: FK_SALES_PERSON
+        description: Chave estrageira com a tabela 
+        
+      - name: FK_TERRITORY
+        description: Chave estrageira com a tabela dim_territory.
+        
+      - name: FK_PRODUCT
+        description: Chave estrageira com a tabela dim_products.
+        
+      - name: FK_CREDIT_CARD
+        description: Chave estrageira com a tabela dim_payments.
+        
+      - name: ORDER_DATE
+        description: Dia do pedido.
+        
+      - name: DUE_DATE
+        description: Dia de 
+        
+      - name: SHIP_DATE
+        description: Dia do envio do pedido.
+        
+      - name: STATUS
+        description: Status do pedido.
+        
+      - name: ONLINE_ORDER_FLAG
+        description: A.
+        
+      - name: SUBTOTAL
+        description: Subtotal da compra.
+        
+      - name: TAXA_MT
+        description: Taxa de manuseio do pedido.
+        
+      - name: FREIGHT
+        description: Frete.
+        
+      - name: TOTAL_DUE
+        description: Total da compra. (Subtotal + Taxa_MT + FREIGHT)
+        
+      - name: ORDER_QTY
+        description: Quantidade de produtos.
+        
+      - name: UNIT_PRICE
+        description: Preço unitario do produto.
+        
+      - name: UNIT_PRICE_DISCOUNT
+        description: Preço unitario do produto com desconto.
+        
+      - name: MODIFIED_DATE          
+        description: A.
+        
