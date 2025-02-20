@@ -1,7 +1,9 @@
 sources:
   - name: erp
-    description: Sistema de vendas da Adventure Works
+    description: sistema de vendas da adventure works
     schema: raw_adventure_works
     database: fea24_11
     tables:
-      - name: salesorderheader
+      - name: product
+      - name: productsubcategory
+      - name: productcategory

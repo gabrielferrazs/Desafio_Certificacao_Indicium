@@ -1,0 +1,66 @@
+models:
+  - name: int_vendas_info_products
+    description: Tabela Intermediaria de Produtos da Adventure Works.
+    columns:
+      - name: PK_PRODUCT
+        description: Chave primaria (PK) da tabela.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: NAME_PRODUCT
+        description: Nome do Produto.
+
+      - name: PRODUCT_NUMBER
+        description: A
+
+      - name: NAME_CATEGORY
+        description: Nome da categoria do produto.
+
+      - name: NAME_SUB_CATEGORY
+        description: Nome da sub-categoria do produto.
+
+      - name: COLOR
+        description: Cor do produto.
+
+      - name: SAFETY_STOCK_LEVEL
+        description: A
+
+      - name: REORDER_POINT
+        description: A
+
+      - name: STANDARD_COST
+        description: A
+
+      - name: LIST_PRICE
+        description: A
+
+      - name: SIZE
+        description: A
+
+      - name: SIZE_UNIT_MEASURE_CODE
+        description: A
+
+      - name: WEIGHT_UNIT_MEASURE_CODE
+        description: A
+
+      - name: WEIGHT
+        description: A
+
+      - name: DAYS_TO_MANUFACTURE
+        description: A
+
+      - name: PRODUCT_LINE
+        description: A
+
+      - name: CLASS
+        description: A
+
+      - name: STYLE
+        description: A
+
+      - name: DISCONTINUED_DATE
+        description: A
+
+      - name: MODIFIED_DATE
+        description: A
