@@ -1,0 +1,38 @@
+models:
+  - name: int_vendas_info_territory
+    description: Tabela Intermediaria de Endereços da Adventure Works.
+    columns:
+      - name: PK_TERRITORY
+        description: Chave primaria (PK) da tabela.
+        data_tests:
+          - not_null
+
+      - name: ADDRESSLINE1
+        description: Endereço.
+
+      - name: ADDRESSLINE2
+        description: Complemento do Endereço.
+
+      - name: NAME_CITY
+        description: Nome da cidade.
+
+      - name: POSTAL_CODE
+        description: Codigo postal.
+
+      - name: NAME_STATE
+        description: Nome do estado.
+
+      - name: STATE_PROVINCE_CODE
+        description: Abreviacao do nome do estado.
+
+      - name: NAME_COUNTRY
+        description: Nome do país.
+
+      - name: COUNTRY_CODE
+        description: Abreviacao do nome do país.
+
+      - name: REGION
+        description: Regiao do país.
+
+      - name: MODIFIED_DATE      
+        description: Data da última modificação. 
