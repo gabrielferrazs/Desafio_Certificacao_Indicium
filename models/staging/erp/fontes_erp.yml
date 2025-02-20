@@ -11,3 +11,6 @@ sources:
       - name: stateprovince
       - name: address
       - name: countryregion
+      - name: person
+      - name: customer
+      - name: store
