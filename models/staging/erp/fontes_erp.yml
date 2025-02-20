@@ -1,6 +1,6 @@
 sources:
   - name: erp
-    description: sistema de vendas da adventure works
+    description: Sistema de vendas da adventure works
     schema: raw_adventure_works
     database: fea24_11
     tables:
@@ -16,3 +16,5 @@ sources:
       - name: store
       - name: creditcard
       - name: personcreditcard
+      - name: salesorderheader
+      - name: salesorderdetail
