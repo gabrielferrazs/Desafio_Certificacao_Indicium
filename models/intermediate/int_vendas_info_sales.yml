@@ -42,20 +42,14 @@ models:
         description: Status do pedido.
         
       - name: ONLINE_ORDER_FLAG
-        description: A.
-        
-      - name: SUBTOTAL
-        description: Subtotal da compra.
-        
-      - name: TAXA_MT
-        description: Taxa de manuseio do pedido.
-        
-      - name: FREIGHT
-        description: Frete.
-        
-      - name: TOTAL_DUE
-        description: Total da compra. (Subtotal + Taxa_MT + FREIGHT)
-        
+        description: Flag se o pedido feito online.
+
+      - name: REASON
+        description: Razao da compra.
+
+      - name: REASON_TYPE
+        description: Categoria da razao da compra. 
+
       - name: ORDER_QTY
         description: Quantidade de produtos.
         
@@ -64,7 +58,28 @@ models:
         
       - name: UNIT_PRICE_DISCOUNT
         description: Preço unitario do produto com desconto.
+                
+      - name: SUBTOTAL
+        description: Total da compra com todos os produtos do pedido.
         
-      - name: MODIFIED_DATE          
-        description: A.
+      - name: TAXA_MT
+        description: Valor da taxa de manuseio do pedido.
         
+      - name: FREIGHT
+        description: Valor do frete.
+        
+      - name: TOTAL_PURCHASE
+        description: Total da compra (Subtotal + Taxa_MT + FREIGHT).
+        
+      - name: Valor_total_negociado          
+        description: Valor total bruto dos produtos sem desconto, frete e taxa mt.
+        
+      - name: Valor_total_liquido          
+        description: Valor total liquido dos produtos com desconto e sem frete e taxa mt.
+        
+      - name: ticket_medio_bruto          
+        description: Ticket médio bruto dos produtos sem desconto e sem frete e taxa mt.
+ 
+      - name: ticket_medio_liquido          
+        description: Ticket médio liquido dos produtos com desconto e sem frete e taxa mt.
+ 
