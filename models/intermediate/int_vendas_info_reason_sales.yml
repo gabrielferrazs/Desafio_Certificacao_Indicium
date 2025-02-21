@@ -1,0 +1,21 @@
+models:
+  - name: int_vendas_info_reason_sales
+    description: Tabela Intermediaria de Razao de Vendas da Adventure Works.
+    columns:
+      - name: SK_REASON
+        description: Chave Surrogate (SK) da tabela.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: PK_SALES_REASON
+        description: Chave primaria (PK)
+
+      - name: PK_SALES_ORDER
+        description: Chave primaria (PK)
+
+      - name: REASON
+        description: Razao da compra.
+
+      - name: REASON_TYPE          
+        description: Tipo da razao da compra.

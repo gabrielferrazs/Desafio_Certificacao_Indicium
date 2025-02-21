@@ -18,3 +18,5 @@ sources:
       - name: personcreditcard
       - name: salesorderheader
       - name: salesorderdetail
+      - name: salesreason
+      - name: salesorderheadersalesreason
