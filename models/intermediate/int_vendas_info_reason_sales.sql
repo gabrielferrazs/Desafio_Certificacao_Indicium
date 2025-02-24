@@ -12,8 +12,8 @@ with
 ,   join_reason as (
         select
         salesreason.pk_sales_reason || '-' || coalesce(salesorderheadersalesreason.pk_sales_order  || ' ', '')  as sk_reason
-        , salesreason.pk_sales_reason
         , salesorderheadersalesreason.pk_sales_order
+        , salesreason.pk_sales_reason
         , salesreason.reason
         , salesreason.reason_type
         from salesreason

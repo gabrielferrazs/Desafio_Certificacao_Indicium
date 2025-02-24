@@ -34,5 +34,3 @@ models:
       - name: REGION
         description: Regiao do país.
 
-      - name: MODIFIED_DATE      
-        description: Data da última modificação. 

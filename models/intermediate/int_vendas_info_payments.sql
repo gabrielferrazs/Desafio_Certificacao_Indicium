@@ -11,14 +11,9 @@ with
 
 ,   joined as (
         select 
-        creditcard.PK_CREDIT_CARD
-        , personcreditcard.PK_BUSINESS_ENTITY
-        , creditcard.CARD_TYPE
-        --, creditcard.CARD_NUMBER
-        --, creditcard.EXP_MONTH
-        --, creditcard.EXP_YEAR
-        , creditcard.MODIFIED_DATE
-        --, personcreditcard.MODIFIED_DATE
+        creditcard.pk_credit_card
+        --, personcreditcard.pk_business_entity
+        , creditcard.card_type
         from creditcard
         left join personcreditcard
             on creditcard.pk_credit_card = personcreditcard.fk_credit_card

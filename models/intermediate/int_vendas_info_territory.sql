@@ -21,25 +21,16 @@ with
 
 ,   joined as (
         select
-        salesterritory.PK_TERRITORY
-        , address.ADDRESSLINE1		
-        , address.ADDRESSLINE2
-        , address.NAME_CITY
-        , address.POSTAL_CODE
-        , stateprovince.NAME_STATE
-        , stateprovince.STATE_PROVINCE_CODE
+        salesterritory.pk_territory
+        , address.addressline1		
+        , address.addressline2
+        , address.name_city
+        , address.postal_code
+        , stateprovince.name_state
+        , stateprovince.state_province_code
         , countryregion.name_country
-        , salesterritory.COUNTRY_CODE
-        , salesterritory.REGION
-        --, salesterritory.SALES_YTD
-        --, salesterritory.SALES_LAST_YEAR
-        --, salesterritory.COST_YTD
-        --, salesterritory.COST_LAST_YEAR
-        --, stateprovince.PK_STATE_PROVINCE
-        --, stateprovince.IS_ONLY_STATE_PROVINCE_FLAG
-        --, address.PK_ADDRESS
-        --, address.SPATIAL_LOCATION
-        , address.MODIFIED_DATE
+        , salesterritory.country_code
+        , salesterritory.region
 
         from salesterritory
         left join stateprovince
