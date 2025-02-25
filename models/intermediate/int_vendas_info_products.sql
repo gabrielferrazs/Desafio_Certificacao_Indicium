@@ -15,7 +15,7 @@ with
         from {{ ref('stg_erp__productcategory') }}
     )
        
-, joined as (
+,   joined as (
         select
         product.pk_product	
         , product.name_product

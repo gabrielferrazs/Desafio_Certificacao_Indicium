@@ -1,6 +1,6 @@
 models:
-  - name: int_vendas_info_territory
-    description: Tabela Intermediaria de Endereços da Adventure Works.
+  - name: dim_territory
+    description: Tabela Dimensao de Endereços da Adventure Works.
     columns:
       - name: PK_ADDRESS
         description: Chave primaria (PK) da tabela.

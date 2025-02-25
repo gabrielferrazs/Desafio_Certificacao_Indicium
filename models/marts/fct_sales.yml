@@ -1,6 +1,6 @@
 models:
-  - name: int_vendas_info_sales
-    description: Tabela Intermediaria de Vendas da Adventure Works.
+  - name: fct_sales
+    description: Tabela Fato de Vendas da Adventure Works.
     columns:
       - name: SK_SALES
         description: Chave Surrogate (SK) da tabela.
