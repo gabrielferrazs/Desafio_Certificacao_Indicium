@@ -10,7 +10,7 @@ with
     )
 
 ,   join_sales as (
-        select distinct
+        select
         salesorderheader.pk_sales_order || '-' || salesorderdetail.pk_sales_order_detail as sk_sales
         , salesorderheader.pk_sales_order
         , salesorderdetail.pk_sales_order_detail
@@ -32,8 +32,9 @@ with
         left join salesorderdetail
             on salesorderheader.pk_sales_order = salesorderdetail.pk_sales_order
     )
+    
 ,   metricas as (
-        select distinct
+        select 
         sk_sales
         , pk_sales_order as fk_sales_order
         , pk_sales_order_detail as fk_sales_order_detail

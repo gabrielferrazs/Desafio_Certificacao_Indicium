@@ -10,6 +10,9 @@ models:
 
       - name: PK_SALES_REASON
         description: Chave primaria (PK)
+        data_tests:
+          - unique
+          - not_null
 
       - name: PK_SALES_ORDER
         description: Chave primaria (PK)

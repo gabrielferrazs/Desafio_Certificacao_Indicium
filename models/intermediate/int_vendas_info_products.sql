@@ -17,11 +17,11 @@ with
        
 , joined as (
         select
-        product.PK_PRODUCT	
-        , product.NAME_PRODUCT
-        , product.PRODUCT_NUMBER
-        , productcategory.NAME_CATEGORY
-        , productsubcategory.NAME_SUB_CATEGORY
+        product.pk_product	
+        , product.name_product
+        , product.product_number
+        , productcategory.name_category
+        , productsubcategory.name_sub_category
         
         
         from product
