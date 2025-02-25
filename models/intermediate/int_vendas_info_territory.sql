@@ -21,7 +21,8 @@ with
 
 ,   joined as (
         select
-        salesterritory.pk_territory
+        address.pk_address as pk_address
+        , salesterritory.pk_territory
         , address.addressline1		
         , address.addressline2
         , address.name_city
@@ -31,14 +32,14 @@ with
         , countryregion.name_country
         , salesterritory.country_code
         , salesterritory.region
-
-        from salesterritory
+        from address
         left join stateprovince
-            on salesterritory.pk_territory = stateprovince.fk_territory
-        left join address
-            on stateprovince.pk_state_province = address.fk_state_province
+            on address.fk_state_province = stateprovince.pk_state_province
         left join countryregion
             on stateprovince.fk_country_region_code = countryregion.pk_country_region_code
+        left join salesterritory
+            on stateprovince.fk_territory = salesterritory.pk_territory
+
     )
 
 select * 
