@@ -1,6 +1,6 @@
 models:
-  - name: int_vendas_info_payments
-    description: Tabela Intermediaria de Pagamentos da Adventure Works.
+  - name: dim_payments
+    description: Tabela Dimensao de Pagamentos da Adventure Works.
     columns:
       - name: PK_CREDIT_CARD
         description: Chave primaria (PK) da tabela.

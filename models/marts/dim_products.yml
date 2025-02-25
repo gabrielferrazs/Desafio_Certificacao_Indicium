@@ -1,6 +1,6 @@
 models:
-  - name: int_vendas_info_products
-    description: Tabela Intermediaria de Produtos da Adventure Works.
+  - name: dim_products
+    description: Tabela Dimensao de Produtos da Adventure Works.
     columns:
       - name: PK_PRODUCT
         description: Chave primaria (PK) da tabela.

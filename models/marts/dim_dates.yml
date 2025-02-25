@@ -1,0 +1,27 @@
+models:
+  - name: dim_dates
+    description: Tabela Dimensao de Datas da Adventure Works.
+    columns:
+      - name: PK_DATE
+        description: Chave primaria (PK) da tabela.
+        data_tests:
+          - unique
+          - not_null
+        
+      - name: DAY_OF_WEEK_NAME
+        description: Dia da semana.
+
+      - name: DAY_OF_WEEK_NAME_SHORT
+        description: Abreviacao do nome do dia da semana.
+
+      - name: MONTH_OF_YEAR
+        description: Mes do ano.
+
+      - name: MONTH_NAME	  
+        description: Nome do mes do ano.
+
+      - name: MONTH_NAME_SHORT
+        description: Abreviacao do nome do mes do ano.
+
+      - name: YEAR_NUMBER
+        description: Ano.

@@ -1,6 +1,6 @@
 models:
-  - name: int_vendas_info_customers
-    description: Tabela Intermediaria de Clientes da Adventure Works.
+  - name: dim_customers
+    description: Tabela Dimesao de Clientes da Adventure Works.
     columns:
       - name: PK_CUSTOMER
         description: Chave primaria (PK) da tabela.
