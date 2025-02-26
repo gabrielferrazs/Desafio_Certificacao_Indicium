@@ -9,8 +9,8 @@ with source as (
         , cast(orderqty as int) as order_qty
         , cast(productid as int) as fk_product
         , cast(specialofferid as int) as fk_special_offer
-        , cast(unitprice as numeric(38,2)) as unit_price
-        , cast(unitpricediscount as numeric(38,2)) as unit_price_discount
+        , cast(unitprice as numeric(18,4)) as unit_price
+        , cast(unitpricediscount as numeric(18,4)) as unit_price_discount
         , cast(rowguid as varchar) as rowguid
         , cast(modifieddate as date) as modified_date
 

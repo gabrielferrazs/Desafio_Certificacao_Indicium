@@ -26,7 +26,7 @@ models:
       - name: FK_CREDIT_CARD
         description: Chave estrageira com a tabela dim_payments.
         
-      - name: ORDER_DATE
+      - name: FK_DATE
         description: Dia do pedido.
         
       - name: STATUS
@@ -61,10 +61,4 @@ models:
         
       - name: Valor_total_liquido          
         description: Valor total liquido dos produtos com desconto e sem frete e taxa mt.
-        
-      - name: ticket_medio_bruto          
-        description: Ticket médio bruto dos produtos sem desconto e sem frete e taxa mt.
- 
-      - name: ticket_medio_liquido          
-        description: Ticket médio liquido dos produtos com desconto e sem frete e taxa mt.
  
