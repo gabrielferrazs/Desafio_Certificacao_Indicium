@@ -61,10 +61,4 @@ models:
         
       - name: Valor_total_liquido          
         description: Valor total liquido dos produtos com desconto e sem frete e taxa mt.
-        
-      - name: ticket_medio_bruto          
-        description: Ticket médio bruto dos produtos sem desconto e sem frete e taxa mt.
- 
-      - name: ticket_medio_liquido          
-        description: Ticket médio liquido dos produtos com desconto e sem frete e taxa mt.
  
