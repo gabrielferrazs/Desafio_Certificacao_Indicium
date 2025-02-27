@@ -3,7 +3,7 @@ models:
     description: Tabela Dimensao de Razao de Vendas da Adventure Works.
     columns:
       - name: PK_SALES_ORDER
-        description: Chave Surrogate (SK) da tabela.
+        description: Chave primaria (PK) da tabela.
         data_tests:
           - unique
           - not_null

@@ -9,7 +9,7 @@ models:
           - unique
 
       - name: PK_TERRITORY
-        description: Chave primaria (PK) da tabela.
+        description: Chave natural da tabela.
 
       - name: ADDRESSLINE1
         description: Endereço.

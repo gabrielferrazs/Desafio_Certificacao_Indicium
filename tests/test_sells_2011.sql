@@ -3,7 +3,7 @@ with
         select
         sum(valor_total_negociado) as soma_total_bruto
         from {{ ref('int_vendas_info_sales') }}
-        where order_date between '2011-01-01' and '2011-12-31'
+        where fk_date between '2011-01-01' and '2011-12-31'
     )
 select soma_total_bruto
 from sells_2011
