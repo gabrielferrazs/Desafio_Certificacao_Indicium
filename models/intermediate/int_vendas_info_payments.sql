@@ -11,12 +11,12 @@ with
 
 ,   joined as (
         select 
-        creditcard.pk_credit_card
-        --, personcreditcard.pk_business_entity
-        , creditcard.card_type
+            creditcard.pk_credit_card
+            --, personcreditcard.pk_business_entity
+            , creditcard.card_type
         from creditcard
-        left join personcreditcard on
-             creditcard.pk_credit_card = personcreditcard.fk_credit_card
+        left join personcreditcard 
+            on creditcard.pk_credit_card = personcreditcard.fk_credit_card
     )
 
 select * 
