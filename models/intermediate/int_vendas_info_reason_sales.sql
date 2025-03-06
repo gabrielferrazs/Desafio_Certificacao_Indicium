@@ -14,26 +14,30 @@ with
             coalesce(salesorderheadersalesreason.pk_sales_order || ' ', '') as pk_sales_order
             , salesreason.pk_sales_reason
             , salesreason.reason_type
-            , CASE 
-                WHEN salesreason.pk_sales_reason IN (2) THEN 'Promotion'
-                WHEN salesreason.pk_sales_reason IN (3, 4, 7, 8) THEN 'Marketing'
-                WHEN salesreason.pk_sales_reason IN (1, 5, 6, 9, 10) THEN 'Other'
-                ELSE 'Teste'
-            END AS motivo
-            , ROW_NUMBER() OVER (PARTITION BY salesorderheadersalesreason.pk_sales_order ORDER BY salesreason.pk_sales_reason) as rn
-        FROM salesreason
-        LEFT JOIN salesorderheadersalesreason
-            ON salesreason.pk_sales_reason = salesorderheadersalesreason.fk_sales_reason
-        GROUP BY salesorderheadersalesreason.pk_sales_order
+            , case 
+                when salesreason.pk_sales_reason in (2) then 'Promotion'
+                when salesreason.pk_sales_reason in (3, 4, 7, 8) then 'Marketing'
+                when salesreason.pk_sales_reason in (1, 5, 6, 9, 10) then 'Other'
+                else 'Sem Categoria'
+            end as motivo
+            , row_number() over (partition by salesorderheadersalesreason.pk_sales_order order by salesreason.pk_sales_reason) as rn
+        from salesreason
+        left join salesorderheadersalesreason
+            on salesreason.pk_sales_reason = salesorderheadersalesreason.fk_sales_reason
+        group by salesorderheadersalesreason.pk_sales_order
                 , motivo
                 , salesreason.pk_sales_reason
                 , salesreason.reason_type
-                
     )
 
-select 
-pk_sales_order
---, reason_type
-, motivo as reason
-from join_reason
-where rn = 1
+,   final as (
+        select 
+            pk_sales_order
+            --, reason_type
+            , motivo as reason
+        from join_reason
+        where rn = 1
+)
+
+select *
+from final

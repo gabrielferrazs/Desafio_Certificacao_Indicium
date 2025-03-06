@@ -11,12 +11,11 @@ with
 
 ,   join_customers as (
         select 
-        --person.pk_business_entity
-        --, person.pk_person
-        customer.pk_customer
-        , person.title
-        , person.first_name || ' ' || coalesce(person.middle_name || ' ', '') || person.last_name as full_name
-
+            --person.pk_business_entity
+            --, person.pk_person
+            customer.pk_customer
+            , person.title
+            , person.first_name || ' ' || coalesce(person.middle_name || ' ', '') || person.last_name as full_name
         from customer
         left join person
             on customer.pk_customer = person.pk_person

@@ -17,13 +17,11 @@ with
        
 ,   joined as (
         select
-        product.pk_product	
-        , product.name_product
-        , product.product_number
-        , productcategory.name_category
-        , productsubcategory.name_sub_category
-        
-        
+            product.pk_product	
+            , product.name_product
+            , product.product_number
+            , productcategory.name_category
+            , productsubcategory.name_sub_category
         from product
         left join productsubcategory 
             on product.fk_product_subcategory = productsubcategory.pk_product_subcategory 
