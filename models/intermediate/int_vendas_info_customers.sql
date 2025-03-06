@@ -24,11 +24,10 @@ with
 
 ,   criando_sk as (
         select 
-        md5(coalesce(pk_customer || ' ', '')  || full_name) as sk_customer 
-        , pk_customer
-        , title
-        , full_name
-
+            md5(coalesce(pk_customer || ' ', '')  || full_name) as sk_customer 
+            , pk_customer
+            , title
+            , full_name
         from join_customers
     )
 
