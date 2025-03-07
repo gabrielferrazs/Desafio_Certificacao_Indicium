@@ -4,7 +4,7 @@ with
         from {{ ref('stg_erp__creditcard') }}
     )
 
-,       personcreditcard as (
+,   personcreditcard as (
         select *
         from {{ ref('stg_erp__personcreditcard') }}
     )
